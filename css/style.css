@@ -1,0 +1,70 @@
+.webix_measure_size .path-item {display:block !important;}
+
+.center_text{
+    text-align: center;
+}
+
+.button_ns
+{
+    border-radius: 100px;
+}
+
+.webix_cell{
+    white-space: pre-line;
+    height: auto;
+    line-height: normal;
+}
+
+a {
+    color:#666666;
+    text-decoration:none
+}
+    
+a:active {
+    color:#666666;
+    text-decoration:none
+}
+    
+a:visited {
+    color:#666666;
+    text-decoration:none
+}
+
+a:hover {
+    color:#339900;
+    text-decoration: underline
+}
+
+.my_toolbar {
+    background:#0c0263ee;
+    color: rgb(255, 255, 255);
+}
+
+.tree_style .webix_hcell{
+    background:#7b7ddb;
+    color:white;
+    vertical-align: middle;
+}
+
+.toolbar_logo{
+    display: flex;
+    display: -webkit-flex;
+    border-right: 1px solid #cac7c7;
+    padding-right: 5px;
+    padding-left: 20px;
+    float:left;
+}
+
+.toolbar_title {
+    font-family: 'PT Sans', sans-serif;
+    float:left;
+    font-size: 8pxpx;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.65);
+    flex-wrap: nowrap;
+    padding-left: 8px;
+
+}

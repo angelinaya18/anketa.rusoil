@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <title>Опрос-анкета</title>
+    <link rel="stylesheet" href="js/codebase/webix.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="//cdn.webix.com/materialdesignicons/5.8.95/css/materialdesignicons.min.css" type="text/css" charset="utf-8">
+    <script src="js/codebase/webix.js"></script>
+    <script src="js/views/toolbar_anketa.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/views/unp.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/views/table_competencies.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/views/comp_treetable.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/views/btn_save_anketa.js" type="text/javascript" charset="utf-8"></script>
+    <script src="data/data.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <script type="text/javascript" charset="utf-8">
+        webix.ready(function(){
+            webix.ui.fullScreen();
+            webix.ui({
+                rows:[
+                toolbar_anketa,
+                {
+                    cols:[
+                        {borderless:true},
+                        {
+                            id:"anketa_center",minWidth:350,gravity:12,borderless:true,body:{
+                                rows:[
+                                {
+                                    cols:[
+                                        ugsn,
+                                        direction
+                                    ]
+                                },
+                                specialty,
+                                comp_treetable,
+                                {
+                                    cols:[
+                                        {},
+                                        btn_save_anketa,
+                                        {}
+                                    ]
+                                }
+                            ]
+                            }
+                        },
+                        {borderless:true}
+                    ]
+                },
+                {
+                    cols:[
+                        {},
+                        {height: 30, template:"УГНТУ", css:"center_text"},
+                        {}
+                    ]
+                },
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
